@@ -3,8 +3,9 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:emreavsar/config-server-example.git
+          uri: git@github.com:emreavsar/cloud-foundry-example.git
           clone-on-start: true
+          basedir: config-server-configs
   security:
     user:
       name: user
