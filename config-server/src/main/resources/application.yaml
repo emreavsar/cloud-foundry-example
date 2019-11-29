@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:emreavsar/config-server-example.git
+          clone-on-start: true
+  security:
+    user:
+      name: user
+      password: pass
+  application:
+    name: config-server
+server:
+  port: 8083
+  servlet:
+    context-path: /config-server
