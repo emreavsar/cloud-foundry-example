@@ -1,5 +1,0 @@
-app:
-  config:
-    urls:
-      contractsApi: //contracts-service/contractsApi
-      paymentsApi: ///payments-service/paymentsApi

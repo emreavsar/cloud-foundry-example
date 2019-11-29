@@ -1,5 +1,0 @@
-app:
-  config:
-    urls:
-      contractsApi: http://localhost:8081/contractsApi
-      paymentsApi: http://localhost:8082/paymentsApi
