@@ -1,10 +1,22 @@
 spring:
   application:
     name: payments-service
+  cloud:
+    discovery:
+      enabled: false
 server:
   port: 8082
   servlet:
     context-path: /paymentsApi
-
-
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+---
+spring:
+  profiles: cloud
+  cloud:
+    discovery:
+      enabled: true
+# todo add cloud config uri for pcf here

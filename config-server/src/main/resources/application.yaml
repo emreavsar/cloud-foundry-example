@@ -4,13 +4,7 @@ spring:
       server:
         git:
           uri: https://github.com/emreavsar/cloud-foundry-example-configs.git
-  security:
-    user:
-      name: user
-      password: pass
   application:
     name: config-server
 server:
-  port: 8083
-  servlet:
-    context-path: /config-server
+  port: 8888
